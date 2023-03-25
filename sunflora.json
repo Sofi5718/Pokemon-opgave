@@ -1,0 +1,23 @@
+{
+    "name": "Sunflora",
+    "description": "Sunflora is a plant Pokémon with a sunflower-like design, having a green trunk and limbs",
+    "ability": "Solar power & Chlorophyll",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/192.png",
+    "footprint": "https://archives.bulbagarden.net/media/upload/f/f8/F0192.png",
+    "dexindex":192,
+    "type": "Sun",
+    "subtype": "Grass",
+    "weaknesses": "Fire, Ice, Poison, Bug, Flying",
+    "gender": "Uni sex",
+    "weight": 8500,
+    "height": 80,
+    "generation": "Gen. II-IV",
+    "spilversion": "1 version",
+    "canEvolve": "boolean",
+    "statsHP":0,
+    "statsAttack": 0,
+    "statsDefence": 0,
+    "statsSpecialAttack": 2,
+    "statsSpecialDefence": 0,
+    "statsSpeed": 0
+}
