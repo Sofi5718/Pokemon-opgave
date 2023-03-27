@@ -3,16 +3,14 @@
 window.addEventListener("load", initApp)
 
 async function initApp() {
-    const pokemon = await getPokemon();
-    
-    showPokemon(pokemon);
-    showPokemon(pokemon);
-    showPokemon(pokemon);
-    showPokemon(pokemon);
-
+    const pokemons = await getPokemon("sunflora.json");
+    for (const pokemon of pokemons) {
+        showPokemon(pokemon);
+       
+    }
 }
-async function getPokemon() {
-    const response = await fetch("sunflora.json")
+async function getPokemon(url) {
+    const response = await fetch(url)
     const data = await response.json();
     return data;
 }
@@ -23,7 +21,7 @@ function showPokemon(pokemon) {
     <article class="grid-item">
     <img src="${pokemon.image}">
     <h2>${pokemon.name}</h2>
-    <p>#${pokemon.dexindex}</p>
+    <p>#${pokemon.dexIndex}</p>
     <p>${pokemon.type}</p>
     </article>
     `)
@@ -36,11 +34,28 @@ function showPokemon(pokemon) {
 }
 
 function showPokemonModal(pokemon) {
+    document.querySelector("#dialog-image").src = pokemon.image;
 
     document.querySelector("#dialog-name").textContent = pokemon.name;
     document.querySelector("#dialog-description").textContent = pokemon.description;
     document.querySelector("#dialog-ability").textContent = pokemon.ability;
- 
+    document.querySelector("#dialog-type").textContent = pokemon.type;
+    document.querySelector("#dialog-subtype").textContent = pokemon.subtype;
+    document.querySelector("#dialog-weaknesses").textContent = pokemon.weaknesses;
+    document.querySelector("#dialog-gender").textContent = pokemon.gender;
+    document.querySelector("#dialog-weight").textContent = pokemon.weight;
+    document.querySelector("#dialog-height").textContent = pokemon.height;
+    document.querySelector("#dialog-generation").textContent = pokemon.generation;
+    document.querySelector("#dialog-spilversion").textContent = pokemon.spilversion;
+    document.querySelector("#dialog-canEvolve").textContent = pokemon.canEvolve;
+    document.querySelector("#dialog-statHP").textContent = pokemon.statHP;
+    document.querySelector("#dialog-statsAttack").textContent = pokemon.statsAttack;
+    document.querySelector("#dialog-statsDefence").textContent = pokemon.statsDefence;
+    document.querySelector("#dialog-statsSpecialAttack").textContent = pokemon.statsSpecialAttack;
+    document.querySelector("#dialog-statsSpecialdefence").textContent = pokemon.statsSpecialdefence;
+    document.querySelector("#dialog-statsSpeed").textContent = pokemon.statsSpeed;
+    
+    
     document.querySelector("#dialog-pokemon").showModal();
 }
 
