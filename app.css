@@ -15,8 +15,9 @@ body {
 }
 
 header {
-    background-color: var(--light-green);
+    background-color: #CC0000;
     padding: 1em 0 1em 0;
+    Color: #FCCF00;
 }
 
 h1 {
@@ -37,7 +38,7 @@ footer {
 }
 
 main {
-    background-color: var(--yellow);
+    background:url(https://media3.giphy.com/media/jsHNf0F6ggiR28Ynsu/giphy.gif?cid=ecf05e47bsuwla04otka0nw7yg654hmnzjpcgsjre4k66vhh&rid=giphy.gif&ct=g);
 }
 
 /* Grid styling on main */
@@ -49,8 +50,9 @@ main {
 }
 
 .grid-item {
-    background-color: var(--light-green);
+    background-image: linear-gradient(#FF0000, #B3A125);
     padding: 1em;
+    border-radius: 20px;
 }
 
 .grid-item:hover {
@@ -74,7 +76,10 @@ main {
 /* Dialog styling */
 dialog {
     width: 65vw;
-    background-color: rgb(201, 223, 123);
+    background-color:#FFDE00;
+    border-style: solid;
+    border-color: dodgerblue;
+    border-width: 15px;
 }
 
 .dialog-grid {
@@ -160,7 +165,8 @@ button {
 }
 
 dialog{
-    width: 65vw;
+    width: 60vw;
+    height: fit-content;
 }
 .dialog-grid{
     display:grid;
@@ -168,4 +174,45 @@ dialog{
 }
 #dialog-section{
     padding: 1em;
+}
+
+/* stats display*/
+
+.dialog-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.2em;
+    padding-left: 1em;
+    
+}
+.stats-HP{
+    background-color: red;
+    text-align: center;
+    border-radius: 15px;
+}
+.stats-Attack{
+    background-color: orange;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.stats-Defence {
+    background-color: green;
+    text-align: center;
+    border-radius: 15px;
+}
+.stats-SpecialAttack{
+    background-color: rgb(0, 110, 255);
+    text-align: center;
+    border-radius: 15px;
+}
+.stats-SpecialDefence{
+    background-color: violet;
+    text-align: center;
+    border-radius: 15px;
+}
+.stats-Speed{
+    background-color: rgb(248, 192, 255);
+    text-align: center;
+    border-radius: 15px;
 }

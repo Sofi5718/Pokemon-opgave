@@ -21,7 +21,7 @@ function showPokemon(pokemon) {
     <article class="grid-item">
     <img src="${pokemon.image}">
     <h2>${pokemon.name}</h2>
-    <p>#${pokemon.dexIndex}</p>
+    <p>#${pokemon.dexindex}</p>
     <p>${pokemon.type}</p>
     </article>
     `)
@@ -38,7 +38,7 @@ function showPokemonModal(pokemon) {
 
     document.querySelector("#dialog-name").textContent = pokemon.name;
     document.querySelector("#dialog-description").textContent = pokemon.description;
-    document.querySelector("#dialog-ability").textContent = pokemon.ability;
+    document.querySelector("#dialog-ability").textContent =pokemon.ability;
     document.querySelector("#dialog-type").textContent = pokemon.type;
     document.querySelector("#dialog-subtype").textContent = pokemon.subtype;
     document.querySelector("#dialog-weaknesses").textContent = pokemon.weaknesses;
@@ -48,11 +48,11 @@ function showPokemonModal(pokemon) {
     document.querySelector("#dialog-generation").textContent = pokemon.generation;
     document.querySelector("#dialog-spilversion").textContent = pokemon.spilversion;
     document.querySelector("#dialog-canEvolve").textContent = pokemon.canEvolve;
-    document.querySelector("#dialog-statHP").textContent = pokemon.statHP;
+    document.querySelector("#dialog-statHP").textContent = pokemon.statsHP;
     document.querySelector("#dialog-statsAttack").textContent = pokemon.statsAttack;
     document.querySelector("#dialog-statsDefence").textContent = pokemon.statsDefence;
     document.querySelector("#dialog-statsSpecialAttack").textContent = pokemon.statsSpecialAttack;
-    document.querySelector("#dialog-statsSpecialdefence").textContent = pokemon.statsSpecialdefence;
+    document.querySelector("#dialog-statsSpecialdefence").textContent = pokemon.statsSpecialDefence;
     document.querySelector("#dialog-statsSpeed").textContent = pokemon.statsSpeed;
     
     
